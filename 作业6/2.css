@@ -1,0 +1,60 @@
+body{ 
+    background-color: rgb(44, 49, 78);
+}
+
+
+.main{
+    border-radius: 10px;
+    background-color: rgb(44, 49, 78);
+    width: 230px;
+    height: 300px;
+    box-shadow: -5px 5px 30px 0px rgba(255, 255, 255, 0.15);
+    position: absolute;
+    top: 33%;
+    left: 43%;
+
+}
+
+.card{
+    border: 1px solid rgb(76, 66, 136);
+    border-radius: 10px;
+    width: 230px;
+    height: 300px;
+    background-color: rgb(76, 66, 136);
+
+    transition-delay: 0.08s !important;
+    transition-timing-function: ease;
+    transition-duration: 0.4s;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover{
+    box-shadow: -5px 5px 20px 0 rgba(255, 255, 255, 0.15);
+    transform: translate(8%, -15%);
+}
+
+.word{
+    text-align: center;
+    margin-top: 30px;
+    color: aliceblue;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.buttonbox{
+    margin-top: 80px;
+}
+
+.button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(255, 54, 155);
+    border:none;
+    border-radius: 5px;
+    color: aliceblue;
+    font-weight:bolder;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
