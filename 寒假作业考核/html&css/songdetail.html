@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="songdetail.css">
+    <script src="./songdetail.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="topbar" class="topbar" >
+        <div id="topbar-1" class="topbar-1" style="width: 1519px; top:0px;">
+            <div class="topbar-1-all">
+                <div class="logopic">
+                    <img src="../pic/wangyiyunlogo.png" height="38px" style="margin-bottom: -6px; margin-right: 7px;">
+                </div>
+                <h1 class="logo">
+                    <a hidefocus="true" href="" style="color: aliceblue;">网易云音乐</a>
+                </h1>
+                <div id="nav-1">
+                    <ul class="guideword-1 ">
+                        <li style="background-color: black;">
+                            <span>
+                                <a hidefocus="true" href="./home.html">
+                                    <em id="findmusic">发现音乐</em>
+                                    <!-- <sub class="cor">&nbsp;</sub> -->
+                                </a>
+
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <a hidefocus="true" href="">
+                                    <em>我的音乐</em>
+                                    <!-- <sub class="cor">&nbsp;</sub> -->
+                                </a>
+                                
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <a hidefocus="true" href="">
+                                    <em>关注</em>
+                                    <!-- <sub class="cor">&nbsp;</sub> -->
+                                </a>
+                               
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <a hidefocus="true" href="">
+                                    <em>商城</em>
+                                    <!-- <sub class="cor">&nbsp;</sub> -->
+                                </a>
+                                
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <a hidefocus="true" href="">
+                                    <em>音乐人</em>
+                                    <!-- <sub class="cor">&nbsp;</sub> -->
+                                </a>
+                                
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <a hidefocus="true" href="">
+                                    <em>下载客户端</em>
+                                    <!-- <sub class="cor">&nbsp;</sub> -->
+                                </a>
+                                
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="srcbox">
+                    <img src="../pic/search.png" width="15px" style="margin-left: 5px;">
+                    <input type="text" id="search" placeholder="音乐/视频/电台/用户">
+
+                    
+                </div>
+                <div class="loginbox">
+                    <a hidefocus="true" href="" style="color: rgb(190, 190, 190);">登录</a>
+                </div>
+            </div>
+        </div>
+        <div id="topbar-2" class="topbar-2" style="width: 1519px; top:0px;">
+            <div id="nav-2">
+                <ul class="guideword-2">
+                    <li>
+                        <a hidefocus="true" href="" >
+                            <em>&nbsp;推荐&nbsp;</em>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a hidefocus="true" href="">
+                            <em>&nbsp;排行榜&nbsp;</em>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a hidefocus="true" href="">
+                            <em>&nbsp;歌单&nbsp;</em>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a hidefocus="true" href="">
+                            <em>&nbsp;主播电台&nbsp;</em>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a hidefocus="true" href="">
+                            <em>&nbsp;歌手&nbsp;</em>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a hidefocus="true" href="">
+                            <em>&nbsp;新碟上架&nbsp;</em>
+                        </a>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="max">
+        <div id="cover">
+            <img id="cover_img" src="../pic/cover.png" style="width: 200px; height: 200px;border-radius: 50%; border: 10px solid rgb(51, 51, 51);">
+        </div>
+        <div id="main">
+            <div id="danqu">单曲</div>
+            <div id="songname"></div>
+            <div id="des"></div>
+            <div id="singer"></div>
+            <div id="album"></div>
+            <button id="detail_play">播放</button>
+            <button id="detail_add">＋</button>
+        </div>
+
+        <div id="lyric">
+
+        </div>
+
+        <div id="comments">
+            <div id="jingcaipinglun">精彩评论</div>
+            <div id="line"></div>
+            <!-- <div class="comment">
+                <div class="avatar">
+                    <img class="avatarimg" src="../pic/cover.png" style="width: 60px;height: 60px;">
+                </div>
+                <div class="nickname"></div>
+                <div class="comment_content"></div>
+                <div class="comment_time"></div>
+                <div class="liked"></div>
+            </div> -->
+        </div>
+    </div>
+    <div class="playbox">
+        <audio id="audio">
+            <source type="audio/mpeg" src="">
+        </audio>
+        <div class="playmain">
+            <div class="playbtnbox">
+                <button id="prev"><</button>
+                <button id="play">
+                    ▶
+                </button>
+                <button id="next">></button>
+
+            </div>
+
+            <div id="progress">
+            
+                <div id="total">
+                    <div id="progressed">
+                    </div>
+                </div>
+                <div id="circle"></div>
+                
+            </div>
+            <div id="curtime"></div>
+            <div style="color: aliceblue;">/</div>
+            <div id="long"></div>
+            <input id="volume" type="range" min="0" max="1" step="0.1">
+            <div id="volumenum"></div>
+            <button id="listnamebtn">播放列表</button>
+            <button id="shift">单循</button>
+        </div>
+        <div id="musicname"></div>
+        <div id="musicnamesbox">
+            <div id="musicnames">
+                <!-- <div class="musicnames-item"></div> -->
+            </div>
+            <div id="musicwords">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

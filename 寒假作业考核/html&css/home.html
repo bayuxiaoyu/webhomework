@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <script src="./home.js"></script>
+    <title>网易云音乐</title>
+</head>
+<body>
+    <div id="topbar" class="topbar" >
+        <div id="topbar-1" class="topbar-1" style="width: 1519px; top:0px;">
+            <div class="topbar-1-all">
+                <div class="logopic">
+                    <img src="../pic/wangyiyunlogo.png" height="38px" style="margin-bottom: -6px; margin-right: 7px;">
+                </div>
+                <h1 class="logo">
+                    <a hidefocus="true" href="" style="color: aliceblue;">网易云音乐</a>
+                </h1>
+                <div id="nav-1">
+                    <ul class="guideword-1 ">
+                        <li style="background-color: black;">
+                            <span>
+                                <a hidefocus="true" href="">
+                                    <em>发现音乐</em>
+                                    <!-- <sub class="cor">&nbsp;</sub> -->
+                                </a>
+
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <a hidefocus="true" href="">
+                                    <em>我的音乐</em>
+                                    <!-- <sub class="cor">&nbsp;</sub> -->
+                                </a>
+                                
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <a hidefocus="true" href="">
+                                    <em>关注</em>
+                                    <!-- <sub class="cor">&nbsp;</sub> -->
+                                </a>
+                               
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <a hidefocus="true" href="">
+                                    <em>商城</em>
+                                    <!-- <sub class="cor">&nbsp;</sub> -->
+                                </a>
+                                
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <a hidefocus="true" href="">
+                                    <em>音乐人</em>
+                                    <!-- <sub class="cor">&nbsp;</sub> -->
+                                </a>
+                                
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <a hidefocus="true" href="">
+                                    <em>下载客户端</em>
+                                    <!-- <sub class="cor">&nbsp;</sub> -->
+                                </a>
+                                
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="srcbox">
+                    <img src="../pic/search.png" width="15px" style="margin-left: 5px;">
+                    <input type="text" id="search" placeholder="音乐/视频/电台/用户">
+
+                    
+                </div>
+                <div class="loginbox">
+                    <a hidefocus="true" href="" style="color: rgb(190, 190, 190);">登录</a>
+                </div>
+            </div>
+        </div>
+        <div id="topbar-2" class="topbar-2" style="width: 1519px; top:0px;">
+            <div id="nav-2">
+                <ul class="guideword-2">
+                    <li>
+                        <a hidefocus="true" href="" style="border-radius: 12px ;
+                            background-color: #9B0909;
+                            border-left: 6px solid #9B0909;
+                            border-right: 6px solid #9B0909;
+                            border-top: 3px solid #9B0909;
+                            border-bottom: 3px solid #9B0909;">
+                            <em>&nbsp;推荐&nbsp;</em>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a hidefocus="true" href="">
+                            <em>&nbsp;排行榜&nbsp;</em>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a hidefocus="true" href="">
+                            <em>&nbsp;歌单&nbsp;</em>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a hidefocus="true" href="">
+                            <em>&nbsp;主播电台&nbsp;</em>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a hidefocus="true" href="">
+                            <em>&nbsp;歌手&nbsp;</em>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a hidefocus="true" href="">
+                            <em>&nbsp;新碟上架&nbsp;</em>
+                        </a>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="picbg"> 
+        <!-- 图片背景和按钮 -->
+        <div class="btnbox">
+            <button id="pr"><</button>
+            <button id="ne">></button>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="autopic">
+            <ul class="pics">
+                <a hidefocus="true" href=""><li class="item active"><img src="../pic/autopic/auto-1.jpg"></li></a>
+                <a hidefocus="true" href=""><li class="item"><img src="../pic/autopic/auto-2.jpg"></li></a>
+                <a hidefocus="true" href=""><li class="item"><img src="../pic/autopic/auto-3.jpg"></li></a>
+                <a hidefocus="true" href=""><li class="item"><img src="../pic/autopic/auto-4.jpg"></li></a>
+                <a hidefocus="true" href=""><li class="item"><img src="../pic/autopic/auto-5.jpg"></li></a>
+                <a hidefocus="true" href=""><li class="item"><img src="../pic/autopic/auto-6.jpg"></li></a>
+                <a hidefocus="true" href=""><li class="item"><img src="../pic/autopic/auto-7.jpg"></li></a>
+                <a hidefocus="true" href=""><li class="item"><img src="../pic/autopic/auto-8.jpg"></li></a>
+                <a hidefocus="true" href=""><li class="item"><img src="../pic/autopic/auto-9.jpg"></li></a>
+                <a hidefocus="true" href=""><li class="item"><img src="../pic/autopic/auto-10.jpg"></li></a>
+        
+            </ul>
+
+            <ul class="redpoint">
+                <li class="point active" data-index="0"></li>
+                <li class="point" data-index="1"></li>
+                <li class="point" data-index="2"></li>
+                <li class="point" data-index="3"></li>
+                <li class="point" data-index="4"></li>
+                <li class="point" data-index="5"></li>
+                <li class="point" data-index="6"></li>
+                <li class="point" data-index="7"></li>
+                <li class="point" data-index="8"></li>
+                <li class="point" data-index="9"></li>
+               
+            </ul>
+            
+        </div>
+        <div class="download">
+            <a><img src="../pic/download.png" width="210px" height="302px" style="margin-top: -1px;margin-left: 2px;cursor: pointer;"></a>
+        </div>
+        <div class="mainmain">
+            <div class="midbar">
+
+                <div class="rec">
+                    <div class="rec-tit">
+                        <span class="minilogo"><img src="../pic/redcircle.png" width="20px" style="margin-bottom: -3px;"></span>
+                        <a href="" class="recword">热门推荐</a>
+                        <div class="tab">
+                            <a href="">华语</a>
+                            <span class="line">&nbsp;|&nbsp;</span>
+                            <a href="">流行</a>
+                            <span class="line">&nbsp;|&nbsp;</span>
+                            <a href="">摇滚</a>
+                            <span class="line">&nbsp;|&nbsp;</span>
+                            <a href="">民谣</a>
+                            <span class="line">&nbsp;|&nbsp;</span>
+                            <a href="">电子</a> 
+
+                            
+                            <span class="more">
+                                <a href="">更多</a>
+                                <img src="../pic/redarrow.png" width="20px" style="margin-bottom: -3px;">
+
+                            </span>
+                            
+                        </div>
+                        <div class="redline"></div>
+
+                       
+                    </div>
+                    <div class="recmusic">
+                        <ul class="allrecmusic">
+                            <li>
+                                <div class="cover">
+                                   
+                                    <a class="reccover" href=""> <img src="../pic/cover.png" width="150px"></a>
+                                    <div class="bottom">
+                                        <img src="../pic/earphonelogo.png" width="15px" style="margin-left: 8px;">
+                                        <!-- 耳机图片 -->
+                                        <span class="listennum"></span>
+                                        <a href=""><img src="../pic/playlogo.png" width="15px" style="margin-left: 70px;"> <!-- 播放图片 --></a>
+                                        
+                                    </div>
+                                </div>
+                                <p class="des">
+                                    <a class="recdes" href=""></a>
+                                </p>
+                            </li>
+                            <li>
+                                <div class="cover">
+                                   
+                                    <a class="reccover" href=""><img src="../pic/cover.png" width="150px"><!--封面图片--></a>
+                                    <div class="bottom">
+                                        <img src="../pic/earphonelogo.png" width="15px" style="margin-left: 8px;">
+                                        <!-- 耳机图片 -->
+                                        <span class="listennum"></span>
+                                        <a href=""><img src="../pic/playlogo.png" width="15px" style="margin-left: 70px;"> <!-- 播放图片 --></a>
+                                        
+                                    </div>
+                                </div>
+                                <p class="des"  >
+                                    <a class="recdes" href=""></a>
+                                </p>
+                            </li>
+                            <li>
+                                <div class="cover">
+                                   
+                                    <a class="reccover" href=""><img src="../pic/cover.png" width="150px"> <!--封面图片--></a>
+                                    <div class="bottom">
+                                        <img src="../pic/earphonelogo.png" width="15px" style="margin-left: 8px;">
+                                        <!-- 耳机图片 -->
+                                        <span class="listennum"></span>
+                                        <a href=""><img src="../pic/playlogo.png" width="15px" style="margin-left: 70px;"> <!-- 播放图片 --></a>
+                                        
+                                    </div>
+                                </div>
+                                <p class="des">
+                                    <a class="recdes" href=""></a>
+                                </p>
+                            </li>
+                            <li>
+                                <div class="cover">
+                                   
+                                    <a class="reccover" href=""><img src="../pic/cover.png" width="150px"> <!--封面图片--></a>
+                                    <div class="bottom">
+                                        <img src="../pic/earphonelogo.png" width="15px" style="margin-left: 8px;">
+                                        <!-- 耳机图片 -->
+                                        <span class="listennum"></span>
+                                        <a href=""><img src="../pic/playlogo.png" width="15px" style="margin-left: 70px;"> <!-- 播放图片 --></a>
+                                        
+                                    </div>
+                                </div>
+                                <p class="des">
+                                    <a class="recdes" href=""></a>
+                                </p>
+                            </li>
+                            <li>
+                                <div class="cover">
+                                   
+                                    <a class="reccover" href=""> <img src="../pic/cover.png" width="150px"><!--封面图片--></a>
+                                    <div class="bottom">
+                                        <img src="../pic/earphonelogo.png" width="15px" style="margin-left: 8px;">
+                                        <!-- 耳机图片 -->
+                                        <span class="listennum"></span>
+                                        <a href=""><img src="../pic/playlogo.png" width="15px" style="margin-left: 70px;"> <!-- 播放图片 --></a>
+                                        
+                                    </div>
+                                </div>
+                                <p class="des">
+                                    <a class="recdes" href=""></a>
+                                </p>
+                            </li>
+                            <li>
+                                <div class="cover">
+                                   
+                                    <a class="reccover" href=""> <img src="../pic/cover.png" width="150px"><!--封面图片--></a>
+                                    <div class="bottom">
+                                        <img src="../pic/earphonelogo.png" width="15px" style="margin-left: 8px;">
+                                        <!-- 耳机图片 -->
+                                        <span class="listennum"></span>
+                                        <a href=""><img src="../pic/playlogo.png" width="15px" style="margin-left: 70px;"> <!-- 播放图片 --></a>
+                                        
+                                    </div>
+                                </div>
+                                <p class="des">
+                                    <a class="recdes" href=""></a>
+                                </p>
+                            </li>
+                            <li>
+                                <div class="cover">
+                                   
+                                    <a class="reccover" href=""><img src="../pic/cover.png" width="150px"> <!--封面图片--></a>
+                                    <div class="bottom">
+                                        <img src="../pic/earphonelogo.png" width="15px" style="margin-left: 8px;">
+                                        <!-- 耳机图片 -->
+                                        <span class="listennum"></span>
+                                        <a href=""><img src="../pic/playlogo.png" width="15px" style="margin-left: 70px;"> <!-- 播放图片 --></a>
+                                        
+                                    </div>
+                                </div>
+                                <p class="des">
+                                    <a class="recdes" href=""></a>
+                                </p>
+                            </li>
+                            <li>
+                                <div class="cover">
+                                   
+                                    <a class="reccover" href=""><img src="../pic/cover.png" width="150px"> <!--封面图片--></a>
+                                    <div class="bottom">
+                                        <img src="../pic/earphonelogo.png" width="15px" style="margin-left: 8px;">
+                                        <!-- 耳机图片 -->
+                                        <span class="listennum"></span>
+                                        <a href=""><img src="../pic/playlogo.png" width="15px" style="margin-left: 70px;"> <!-- 播放图片 --></a>
+                                        
+                                    </div>
+                                </div>
+                                <p class="des">
+                                    <a class="recdes" href=""></a>
+                                </p>
+                            </li>
+                        </ul>    
+                    </div>
+                    
+                </div>
+
+                <div class="newdisk">
+                    <div class="disk-tit">
+                        <span class="minilogo"><img src="../pic/redcircle.png" width="20px" style="margin-bottom: -3px;"></span>
+                        <a href="" class="recword">新碟上架</a>
+                        <div class="tab">
+                            <span class="more">
+                                <a href="">更多</a>
+                                <img src="../pic/redarrow.png" width="20px" style="margin-bottom: -3px;">
+                            </span>
+                        </div>
+                        <div class="redline"></div>
+                    </div>
+                    
+                    <div class="diskmusic">
+                        diskmusic
+                    </div>
+                    
+                </div>
+
+                <div class="rank">
+                    <div class="rank-tit">
+                        <span class="minilogo"><img src="../pic/redcircle.png" width="20px" style="margin-bottom: -3px;"></span>
+                        <a href="" class="recword">榜单&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <div class="tab">
+                            <span class="more">
+                                <a href="">更多</a>
+                                <img src="../pic/redarrow.png" width="20px" style="margin-bottom: -3px;">
+                            </span>
+                        </div>
+                        <div class="redline"></div>
+                    </div>
+                    
+                    <div class="rankmusic">
+                        rankmusic
+                    </div>
+
+                </div>
+                
+
+            </div>
+
+
+
+        </div>
+        <div class="side">
+            <div id="side_title">
+                <img src="../pic/redcircle.png" width="20px" style="margin-bottom: -3px;margin-left: 10px;margin-right: 5px;">热门MV
+            </div>
+            <div id="side_main">
+                <!-- <div class="side_item">
+                    <img src="../pic/cover.png" width="80px" height="45px">
+                    <div class="side_item_des">
+                        <a class="side_item_link" href="">
+
+                        </a>
+                    </div>
+                </div> -->
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="playbox">
+        <audio id="audio">
+            <source type="audio/mpeg" src="">
+        </audio>
+        <div class="playmain">
+            <div class="playbtnbox">
+                <button id="prev"><</button>
+                <button id="play">
+                    ▶
+                </button>
+                <button id="next">></button>
+
+            </div>
+
+            <div id="progress">
+            
+                <div id="total">
+                    <div id="progressed">
+                    </div>
+                </div>
+                <div id="circle"></div>
+                
+            </div>
+            <div id="curtime"></div>
+            <div style="color: aliceblue;">/</div>
+            <div id="long"></div>
+            <input id="volume" type="range" min="0" max="1" step="0.1">
+            <div id="volumenum"></div>
+            <button id="listnamebtn">歌单</button>
+            <button id="shift">单循</button>
+        </div>
+        <div id="musicname"></div>
+        <div id="musicnamesbox">
+            <div id="musicnames">
+                <!-- <div class="musicnames-item"></div> -->
+            </div>
+            <div id="musicwords">
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
