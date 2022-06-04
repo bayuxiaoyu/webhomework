@@ -274,6 +274,75 @@ img {
     display: none;
     background-color: rgb(134, 132, 255);
     width: 420px;
-    height: 800px;
-    margin-top: 150px;
+    height: 700px;
+    margin-top: 130px;
+}
+
+#search{
+    width: 330px;
+    margin-left: 10px;
+}
+
+#cancel{
+    margin-left: 10px;
+}
+
+#hotbox{
+    background-color: rgb(237, 169, 169);
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#hottags{
+    background-color: rgb(93, 198, 255);
+    width: 385px;
+    height: 350px;
+    padding: 10px;
+}
+
+.hotli{
+    display: inline-block;
+    background-color: rgba(236, 165, 165, 0.448);
+    padding: 5px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+/* history */
+
+#historybox{
+    background-color: rgb(237, 169, 169);
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#historytags{
+    background-color: rgb(93, 198, 255);
+    width: 385px;
+    
+    padding: 10px;
+}
+
+.hitoryli{
+    display: inline-block;
+    background-color: rgba(236, 165, 165, 0.448);
+    padding: 5px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+
+/* searchout */
+
+.outli{
+    background-color: rgb(160, 193, 231);
+    margin-top: 10px;
+    width: 400px;
+    margin-left: -35px;
+}
+
+.outartist{
+    font-size: 13px;
+    color: #676767;
 }
