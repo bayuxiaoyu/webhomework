@@ -1,0 +1,202 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    border-radius: 5px;
+}
+
+#top{
+    background-color: rgb(244, 200, 200);
+    height: 120px;
+    width: 420px;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    margin: 0 auto;
+}
+
+#logo{
+    background-color: rgb(255, 254, 227);
+    height: 80px;
+}
+
+#shiftbtn{
+    text-align: center;
+    margin-top: 5px;
+}
+
+#recommendbtn{
+    width: 80px;
+    height: 30px;
+}
+
+#rankbtn{
+    width: 80px;
+    height: 30px;
+    margin-left: 130px;
+}
+
+#recommend{
+    background-color: rgb(180, 221, 251);
+    width: 420px;
+    height: 1000px;
+    margin-top: 100px;
+}
+
+#rank{
+    display: none;
+    background-color: rgb(181, 180, 251);
+    width: 420px;
+    height: 1000px;
+    margin-top: 100px;
+}
+
+#search{
+    width: 400px;
+    height: 30px;
+    margin-left: 8px;
+    margin-top: 30px;
+}
+
+.list{
+    background-color: rgb(213, 250, 158);
+    width: 400px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 200px;
+    margin-top: 10px;
+
+}
+
+.title{
+    background-color: rgb(251, 173, 237);
+    width: 400px;
+}
+
+.more{
+    margin-left: 280px;
+    font-size: 13px;
+}
+
+.songs{
+    background-color: #63d3f5;
+    height: 175px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.songsul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.guanfangli{ 
+    margin-left: 20px;
+    
+}
+
+.guanfangdes{
+    background-color: rgb(249, 173, 173);
+    width: 100px;
+    height: 45px;
+    word-wrap: break-word;
+}
+
+.guanfangcover{
+    margin-bottom: -20px;
+}
+
+
+.guanfangnum{
+    background-color: rgba(232, 243, 129, 0.678);
+    font-size: 13px;
+    width: auto;
+    text-align: right;
+    display: inline-block;
+    
+    position: relative;
+    top: -5px;
+
+}
+
+
+.darenli{ 
+    margin-left:20px;
+}
+
+.darendes{
+    background-color: rgb(249, 173, 173);
+    width: 100px;
+    height: 45px;
+    word-wrap: break-word;
+}
+
+.darencover{
+    margin-bottom: -20px;
+}
+
+
+.darennum{
+    background-color: rgba(232, 243, 129, 0.678);
+    font-size: 13px;
+    width: auto;
+    text-align: right;
+    display: inline-block;
+    
+    position: relative;
+    top: -5px;
+
+}
+
+
+/* 专区 */
+
+.zhuanqupic{
+    width: 100px;
+    height: 120px;
+}
+
+.icon{
+    width: 200px;
+    position: relative;
+    top:-50px;
+    left: 0;
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.zhuanquname{
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.zhuanquicon{
+    border-radius: 50%;
+}
+
+.zhuanquli{ 
+    margin-left: 30px;
+}
+
+.zhuanqudes{
+    background-color: rgb(249, 173, 173);
+    font-size: 13px;
+    width: 210px;
+    height: 45px;
+    word-wrap: break-word;
+}
