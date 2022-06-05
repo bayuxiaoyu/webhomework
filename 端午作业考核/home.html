@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" media="screen and (max-width:420px)" href="./home.css">
+    <link rel="stylesheet" media="screen and (min-width:420px)" href="./home2.css">
     <title>QQ音乐</title>
     <script src="./home.js"></script>
 </head>
 <body>
     <div id="top">
-        <div id="logo"></div>
+        <div id="logo">
+            <img id="qqmusic1" src="./QQmusic1.jpg" width="420px">
+        </div>
         <div id="shiftbtn">
             <button id="recommendbtn">推荐</button>
             <button id="rankbtn">排行</button>
@@ -170,7 +173,7 @@
 
        <div id="zhuanqulist" class="list">
             <div class="title">
-                <span class="name">专区</span>
+                <span class="name">专区&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                 <span class="more">更多></span>
             </div>
 
@@ -311,8 +314,8 @@
        </div>
 
 
-       <div id="bottom">
-
+       <div class="bottom">
+            <img id="qqmusic2" src="./QQmusic2.jpg" width="420px">
        </div>
     </div>
 
@@ -344,11 +347,16 @@
             <li class="rankli"></li>
             <li class="rankli"></li>
         </ul>
+
+        <div class="bottom">
+            <img id="qqmusic2" src="./QQmusic2.jpg" width="420px">
+       </div>
     </div>
 
     <div id="hotsearch">
         <div id="searchbox">
             <input id="search" type="text" placeholder="搜索">
+            <span id="deletebtn">X</span>
             <span id="cancel">取消</span>
         </div>
         <div id="historybox">
@@ -356,7 +364,7 @@
                 搜索历史
             </div>
             <div id="historytags">
-                <span class="historyli"></span>
+                <!-- <span class="historyli"></span> -->
             </div>
             
         </div>
@@ -382,6 +390,11 @@
                 <span class="hotli"></span>
 
             </div>
+
+
+            <div class="bottom">
+                <img id="qqmusic2" src="./QQmusic2.jpg" width="420px">
+           </div>
         </div>
 
         <div id="outbox">
