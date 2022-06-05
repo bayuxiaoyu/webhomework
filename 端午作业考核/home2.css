@@ -339,12 +339,12 @@ img {
     background-color: #fafafa;
     margin-left: 10px;
     margin-top: 10px;
+    display: none;
 }
 
 #historytags{
     background-color: #fafafa;
     width: 700px;
-    
     padding: 10px;
 }
 
@@ -374,4 +374,24 @@ img {
 
 #bottom{
     width: 1000px;
+}
+
+#install{
+    background-color: #fafafa;
+    font-size: 13px;
+    width: 180px;
+    height: 50px;
+    border-radius: 30px;
+    
+    position:fixed;
+    bottom: 80px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    z-index: 999;
+}
+
+#qqmusic3{
+    margin-top: 5px;
+    margin-left: 8px;
 }

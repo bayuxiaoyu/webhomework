@@ -29,8 +29,6 @@ window.onload = function(){
         recommend.style.display = 'none';
         hotsearch.style.display = 'block';
         hotbox.style.display = 'block';
-        historybox.style.display  = "block";
-        historybox.style.display  = "block";
         showhistory();
 
         for(let i=0;i<10;i++){
@@ -119,10 +117,14 @@ window.onload = function(){
     const historytags = document.getElementById("historytags");
 
     function showhistory(){
-        historytags.innerHTML = '';
-        for(let i=0;i<history.length;i++){
-            historytags.innerHTML += `<span class="historyli">`+history[i] +`</span>`;
+        if(history.length!=0){
+            historybox.style.display = "block";
+            historytags.innerHTML = '';
+            for(let i=0;i<history.length;i++){
+                historytags.innerHTML += `<span class="historyli">`+history[history.length-i-1] +`</span>`;
+            }
         }
+        
     }
 
     cancel.onclick = function(){
@@ -170,8 +172,30 @@ window.onload = function(){
                 hotbox.style.display = 'none';
                 historybox.style.display = 'none';
                 outbox.style.display = 'block';
-                history.push(search.value);
+
+                //判断是否搜索重复
+                let flag = 0;
+                if(history.length!=0){
+                    
+                    for(let i=0;i<history.length;i++){
+                        if(history[i]==search.value){
+                            history.splice(i, 1);
+                            history.push(search.value);
+                            flag = 1;
+                            break;
+                        }
+                    }
+
+                }else if(history.length==0){
+                    flag = 1;
+                    history.push(search.value);
+                }
                 
+                if(flag==0){
+                    history.push(search.value);
+                }
+                
+
                 async function getout(){
                     let res = await fetch("http://124.221.249.219:8000/api/search?keyword="+search.value+"",{
                     method:"GET",
@@ -214,7 +238,6 @@ window.onload = function(){
 
     deletebtn.onclick = function(){
         search.value = '';
-        historybox.style.display  = "block";
         outbox.style.display = 'none';
         hotbox.style.display = 'block';
         showhistory();
